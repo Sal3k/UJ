@@ -1,12 +1,8 @@
-package UJ_Project;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-/**
- * Created by Salek on 23.03.2017.
- */
+
 public class SearchFile {
 
     public void File(String fileName, String searchName) throws FileNotFoundException {

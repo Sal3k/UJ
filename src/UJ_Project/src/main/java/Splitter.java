@@ -1,12 +1,7 @@
-package UJ_Project;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-/**
- * Created by Salek on 25.03.2017.
- */
 public class Splitter {
 
 
