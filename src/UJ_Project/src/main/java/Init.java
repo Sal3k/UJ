@@ -14,8 +14,9 @@ public class Init {
 
         DataInput data = new DataInput();
 
+
         SearchFile search = new SearchFile();
-        search.File("/resources/2015.txt", data.nameInput());
+        search.File("/home/salek/IdeaProjects/UJ/src/UJ_Project/src/main/resources/2015.txt", data.nameInput());
 
     }
 }
