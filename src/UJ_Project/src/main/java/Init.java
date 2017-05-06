@@ -13,10 +13,10 @@ public class Init {
     public static void main (String[] args) throws FileNotFoundException{
 
         DataInput data = new DataInput();
-
+        Console menu = new Console();
 
         SearchFile search = new SearchFile();
-        search.File("/home/salek/IdeaProjects/UJ/src/UJ_Project/src/main/resources/2015.txt", data.nameInput());
+        search.File("/home/salek/IdeaProjects/UJ/src/UJ_Project/src/main/resources/2015.txt");
 
     }
 }

@@ -4,9 +4,11 @@ public class DataInput {
 
     Scanner input = new Scanner(System.in);
 
-    public String sexInput()  {
-        System.out.println("What gender you want to check? Type F for female, M for male.");
-        return input.nextLine();
+    public int sexInput()  {
+        System.out.println("What gender you want to check?");
+        System.out.println("1. Male");
+        System.out.println("2. Female");
+        return input.nextInt();
     }
 
     public String nameInput() {
