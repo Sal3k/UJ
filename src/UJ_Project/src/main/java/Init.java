@@ -1,5 +1,3 @@
-import java.io.FileNotFoundException;
-
 /** Plik 2015.txt zawiera dane o pupularności imion nadawanych w USA w roku 2015. Napisz program, który umożliwi
 
  wyszukanie imienia i wypisze jego pozycję i ilość;
@@ -9,16 +7,12 @@ import java.io.FileNotFoundException;
  **/
 
 public class Init {
-    public static void main (String[] args) throws FileNotFoundException{
+    public static void main (String[] args) {
 
         DataInput data = new DataInput();
 
         int gen;
         Console menu = new Console();
         gen = menu.Menu();
-
-        SearchFile search = new SearchFile();
-        search.File("/home/salek/IdeaProjects/UJ/src/UJ_Project/src/main/resources/2015.txt", gen);
-
     }
 }
