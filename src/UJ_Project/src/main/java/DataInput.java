@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class DataInput {
 
-    Scanner input = new Scanner(System.in);
+    static Scanner input = new Scanner(System.in);
 
-    public int sexInput()  {
+    public static int genderInput()  {
         System.out.println("What gender you want to check?");
         System.out.println("1. Male");
         System.out.println("2. Female");

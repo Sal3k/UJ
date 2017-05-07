@@ -1,4 +1,5 @@
 import javax.xml.crypto.Data;
+import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -6,55 +7,34 @@ import java.util.Scanner;
 
 public class SearchFile {
 
-    public void File(String fileName) throws FileNotFoundException {
+    public void File(String fileName, int gen) throws FileNotFoundException {
         Scanner input = new Scanner(new File(fileName));
 
 
 //            String line = input.nextLine();
-        DataInput sex = new DataInput();
-        int value = sex.sexInput();
+//        int gen = DataInput.genderInput();
 
 
-            while (input.hasNext()) {
-                String position = input.next();
-                String maleName = input.next();
-                String malePopularity = input.next();
-                String femaleName = input.next();
-                String femalePopularity = input.next();
 
-                switch (value) {
-                    case 1:
-                        System.out.println(position + "\t" + maleName + "\t" + malePopularity + "\t");
-                        break;
-                    case 2:
-                        System.out.println(position + "\t" + femaleName + "\t" + femalePopularity + "\t");
-                        break;
-                }
-//                if (sex.sexInput().equals("M")) {
-//                    System.out.println(position + "\t" + maleName + "\t" + malePopularity + "\t");
-//                }
-//                else if (sex.sexInput().equals("F")) {
-//                    System.out.println(position + "\t" + femaleName + "\t" + femalePopularity + "\t");
-//
-//                }
+        while (input.hasNext()) {
+            String position = input.next();
+            String maleName = input.next();
+            String malePopularity = input.next();
+            String femaleName = input.next();
+            String femalePopularity = input.next();
+
+            switch (gen) {
+                case 1:
+                    System.out.println(position + "\t" + maleName + "\t" + malePopularity + "\t");
+                    break;
+                case 2:
+                    System.out.println(position + "\t" + femaleName + "\t" + femalePopularity + "\t");
+                    break;
             }
-
-//        else if (sex.sexInput().equals("F")) {
-//            while (input.hasNext()) {
-//                String position = input.next();
-//                String maleName = input.next();
-//        String malePopularity = input.next();
-//        String femaleName = input.next();
-//        String femalePopularity = input.next();
-//                System.out.println(position + "\t" + femaleName + "\t" + femalePopularity + "\t");
-//            }
-//
-//        }
-
 
 //            if(line.contains(searchName))
 //                System.out.println(line);
+        }
     }
 }
-
 
