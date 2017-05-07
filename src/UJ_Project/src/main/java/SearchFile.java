@@ -7,9 +7,15 @@ import java.util.Scanner;
 
 public class SearchFile {
 
-    public void File(String fileName, int gen) throws FileNotFoundException {
-        Scanner input = new Scanner(new File(fileName));
-
+    public void File(String fileName, int gen) {
+        Scanner input;
+        try {
+            input = new Scanner(new File(fileName));
+        }
+        catch(FileNotFoundException e) {
+            System.err.println("Coult not find file " + fileName + ": " + e.getMessage());
+            return;
+        }
 
 //            String line = input.nextLine();
 //        int gen = DataInput.genderInput();
